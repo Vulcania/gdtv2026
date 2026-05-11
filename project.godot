@@ -11,7 +11,12 @@ config_version=5
 [application]
 
 config/name="gdtv2026"
+run/main_scene="uid://2348qwkndwjy"
 config/features=PackedStringArray("4.6")
+
+[autoload]
+
+Global="*uid://c6b642kpv0h32"
 
 [physics]
 
