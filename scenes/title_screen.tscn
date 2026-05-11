@@ -30,7 +30,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MainMenuContainer" type="VBoxContainer" parent="." unique_id=1447407477]
-visible = false
 layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
@@ -100,6 +99,7 @@ layout_mode = 2
 text = "Back"
 
 [node name="CreditsContainer" type="VBoxContainer" parent="." unique_id=1721746955]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
