@@ -1,9 +1,11 @@
 [gd_resource type="Resource" script_class="Clue" format=3 uid="uid://dn46eb4sgc4q"]
 
+[ext_resource type="Texture2D" uid="uid://p4v3aywetl66" path="res://clues/pickup_clues/T_DummyApple.png" id="1_ug8iy"]
 [ext_resource type="Script" uid="uid://ccq71c3mdml55" path="res://clues/clue.gd" id="1_xkk57"]
 
 [resource]
 script = ExtResource("1_xkk57")
 id = 1
 description = "This is a sample clue"
+image = ExtResource("1_ug8iy")
 metadata/_custom_type_script = "uid://ccq71c3mdml55"

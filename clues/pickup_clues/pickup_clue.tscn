@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cwcotshrdksch"]
+
+[ext_resource type="Script" uid="uid://dyjtbseya8ge1" path="res://clues/pickup_clues/pickup_clue.gd" id="1_wg62i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_phw2l"]
+
+[node name="PickupClue" type="Area2D" unique_id=326373785]
+script = ExtResource("1_wg62i")
+
+[node name="PickupClueTexture" type="Sprite2D" parent="." unique_id=1799464925]
+
+[node name="PickupCollision" type="CollisionShape2D" parent="." unique_id=413715140]
+shape = SubResource("RectangleShape2D_phw2l")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

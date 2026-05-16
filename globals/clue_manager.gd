@@ -5,7 +5,9 @@ var collected_clues: Array[Clue] = []
 
 func collect_clue(clue: Clue) -> void:
 	# When the player actually finds out about a clue, add it here
+	# TODO: Pickup animation
 	collected_clues.append(clue)
+	print(clue.description)
 
 func clues_connected(clue1: Clue, clue2: Clue) -> bool:
 	# Returns if clues are related to each other using the clue properties
