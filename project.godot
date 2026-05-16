@@ -12,7 +12,7 @@ config_version=5
 
 config/name="gdtv2026"
 run/main_scene="uid://2348qwkndwjy"
-config/features=PackedStringArray("4.6")
+config/features=PackedStringArray("4.5")
 
 [autoload]
 
@@ -25,3 +25,26 @@ Global="*uid://c6b642kpv0h32"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+renderer/rendering_method="forward_plus"
+
+[xogot]
+
+project/editorState=[{
+"column": 0,
+"line": 0,
+"path": "res://scripts/map_area.gd",
+"type": "file"
+}, {
+"column": 5,
+"current": true,
+"line": 14,
+"path": "res://scripts/map.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 0,
+"path": "res://scripts/global.gd",
+"type": "file"
+}]
+project/breakpoints={}
+project/disabled_breakpoints={}

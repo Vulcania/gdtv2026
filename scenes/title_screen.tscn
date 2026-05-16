@@ -1,11 +1,11 @@
-[gd_scene format=3 uid="uid://2348qwkndwjy"]
+[gd_scene load_steps=3 format=3 uid="uid://2348qwkndwjy"]
 
 [ext_resource type="Script" uid="uid://c7qm4l3jpdn3j" path="res://scripts/title_screen.gd" id="1_fgkus"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7vrkn"]
 font_size = 64
 
-[node name="MainMenu" type="Control" unique_id=2046263025]
+[node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -14,7 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_fgkus")
 
-[node name="GameTitle" type="Label" parent="." unique_id=1860261001]
+[node name="GameTitle" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -29,7 +29,7 @@ label_settings = SubResource("LabelSettings_7vrkn")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MainMenuContainer" type="VBoxContainer" parent="." unique_id=1447407477]
+[node name="MainMenuContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
@@ -43,27 +43,27 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="PlayButton" type="Button" parent="MainMenuContainer" unique_id=1370520594]
+[node name="PlayButton" type="Button" parent="MainMenuContainer"]
 layout_mode = 2
 size_flags_vertical = 4
 text = "Play"
 
-[node name="OptionsButton" type="Button" parent="MainMenuContainer" unique_id=1264939880]
+[node name="OptionsButton" type="Button" parent="MainMenuContainer"]
 layout_mode = 2
 size_flags_vertical = 4
 text = "Options"
 
-[node name="CreditsButton" type="Button" parent="MainMenuContainer" unique_id=810848511]
+[node name="CreditsButton" type="Button" parent="MainMenuContainer"]
 layout_mode = 2
 size_flags_vertical = 4
 text = "Credits"
 
-[node name="QuitButton" type="Button" parent="MainMenuContainer" unique_id=884339325]
+[node name="QuitButton" type="Button" parent="MainMenuContainer"]
 layout_mode = 2
 size_flags_vertical = 4
 text = "Quit"
 
-[node name="OptionsContainer" type="VBoxContainer" parent="." unique_id=1000000002]
+[node name="OptionsContainer" type="VBoxContainer" parent="."]
 visible = false
 layout_mode = 0
 anchor_left = 0.5
@@ -78,27 +78,27 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="MusicLabel" type="Label" parent="OptionsContainer" unique_id=1000000003]
+[node name="MusicLabel" type="Label" parent="OptionsContainer"]
 layout_mode = 2
 text = "Music Volume:"
 
-[node name="MusicSlider" type="HSlider" parent="OptionsContainer" unique_id=1387034836]
+[node name="MusicSlider" type="HSlider" parent="OptionsContainer"]
 layout_mode = 2
 value = 80.0
 
-[node name="SFXLabel" type="Label" parent="OptionsContainer" unique_id=1000000005]
+[node name="SFXLabel" type="Label" parent="OptionsContainer"]
 layout_mode = 2
 text = "SFX Volume:"
 
-[node name="SfxSlider" type="HSlider" parent="OptionsContainer" unique_id=549180427]
+[node name="SfxSlider" type="HSlider" parent="OptionsContainer"]
 layout_mode = 2
 value = 80.0
 
-[node name="BackButton" type="Button" parent="OptionsContainer" unique_id=1000000007]
+[node name="BackButton" type="Button" parent="OptionsContainer"]
 layout_mode = 2
 text = "Back"
 
-[node name="CreditsContainer" type="VBoxContainer" parent="." unique_id=1721746955]
+[node name="CreditsContainer" type="VBoxContainer" parent="."]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -114,7 +114,7 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="ByLabel" type="Label" parent="CreditsContainer" unique_id=877589749]
+[node name="ByLabel" type="Label" parent="CreditsContainer"]
 layout_mode = 2
 text = "Made by:
 DesertDev
@@ -125,14 +125,14 @@ Imke
 Evita (The E Word)
 "
 
-[node name="ThxLabel" type="Label" parent="CreditsContainer" unique_id=1632423294]
+[node name="ThxLabel" type="Label" parent="CreditsContainer"]
 layout_mode = 2
 text = "Special Thanks:
 GDTV
 DACH GameJam - Party
 "
 
-[node name="BackButton" type="Button" parent="CreditsContainer" unique_id=417765077]
+[node name="BackButton" type="Button" parent="CreditsContainer"]
 layout_mode = 2
 text = "Back"
 

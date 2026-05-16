@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://drdjlvvbep38h"]
+
+[ext_resource type="Script" uid="uid://mly3f7am63p2" path="res://scripts/map.gd" id="1_paxxb"]
+[ext_resource type="PackedScene" uid="uid://gtp00v5gj2xp" path="res://scenes/map_area.tscn" id="2_paxxb"]
+
+[node name="Map" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_paxxb")
+
+[node name="PlaceholderBackground" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.5882353, 0.827451, 0.37254903, 1)
+
+[node name="CampfireArea" parent="." instance=ExtResource("2_paxxb")]
+position = Vector2(600, 300)
+
+[node name="LakeArea" parent="." instance=ExtResource("2_paxxb")]
+position = Vector2(279.99997, 183.99998)
+location = 1
+
+[connection signal="input_event" from="CampfireArea" to="." method="_on_campfire_area_input_event" flags=3]
+[connection signal="input_event" from="LakeArea" to="." method="_on_lake_area_input_event" flags=3]
