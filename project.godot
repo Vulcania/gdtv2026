@@ -21,11 +21,15 @@ resources_spreadsheet_view/fold_docks=true
 resources_spreadsheet_view/resource_cell_label_mode=1
 resources_spreadsheet_view/freeze_first_column=true
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="gdtv2026"
 run/main_scene="uid://2348qwkndwjy"
-config/features=PackedStringArray("4.5")
+config/features=PackedStringArray("4.6")
 
 [autoload]
 
@@ -44,7 +48,6 @@ enabled=PackedStringArray("res://addons/resources_spreadsheet_view/plugin.cfg")
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="forward_plus"
 
 [xogot]
 

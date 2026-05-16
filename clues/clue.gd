@@ -5,3 +5,6 @@ extends Resource
 @export var description: String = ""
 @export var image: Texture2D
 @export var hidden_relations: Array[int] # Contains all clue IDs which make sense to connect to it (to get a feedback like "hmm, that's right" or "I'm not sure" when the player does it)
+
+func is_related(other_clue: Clue) -> bool:
+	return hidden_relations.has(other_clue.id)
