@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://pjwmr251gvw0"]
+
+[ext_resource type="Script" uid="uid://bpo2doricbb8r" path="res://detective_board/pin_connection/pin_connection.gd" id="1_awb0b"]
+
+[node name="PinConnection" type="Node2D" unique_id=1127375367]
+script = ExtResource("1_awb0b")

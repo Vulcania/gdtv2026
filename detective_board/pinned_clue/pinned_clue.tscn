@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dxxmja4tmig2u"]
+
+[ext_resource type="Script" uid="uid://d0tv540ma2ih0" path="res://detective_board/pinned_clue/pinned_clue.gd" id="1_6s17b"]
+[ext_resource type="PackedScene" uid="uid://02ydq22a0y4h" path="res://detective_board/board_pin/board_pin.tscn" id="3_vqau4"]
+
+[sub_resource type="Gradient" id="Gradient_6s17b"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_cp2h8"]
+gradient = SubResource("Gradient_6s17b")
+width = 28
+
+[node name="ClueElement" type="Node2D" unique_id=662961703]
+script = ExtResource("1_6s17b")
+
+[node name="Backgroundtexture" type="Sprite2D" parent="." unique_id=124281221]
+position = Vector2(71, 85.75)
+scale = Vector2(4.9999995, 172.5)
+texture = SubResource("GradientTexture1D_cp2h8")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=336935668]
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 135.0
+offset_bottom = 164.0
+
+[node name="clueTexture" type="TextureRect" parent="VBoxContainer" unique_id=1888011625]
+layout_mode = 2
+size_flags_horizontal = 4
+stretch_mode = 4
+
+[node name="clueDescription" type="Label" parent="VBoxContainer" unique_id=1589197009]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "This is a sample text with nothing to see at all"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="BoardPin" parent="." unique_id=1603018467 node_paths=PackedStringArray("pinned_clue") instance=ExtResource("3_vqau4")]
+position = Vector2(11, 9)
+scale = Vector2(0.2991829, 0.2991829)
+pinned_clue = NodePath("..")

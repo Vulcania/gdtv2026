@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://8vdu3l31c18q"]
+
+[ext_resource type="Script" uid="uid://baoa1d6o5t0d2" path="res://detective_board/detective_board.gd" id="1_4n2vt"]
+[ext_resource type="Texture2D" uid="uid://b0nymh6bnuo0t" path="res://detective_board/T_Cork.jpg" id="2_12cyj"]
+
+[node name="DetectiveBoard" type="Node2D" unique_id=1895314259]
+script = ExtResource("1_4n2vt")
+
+[node name="BoardTexture" type="Sprite2D" parent="." unique_id=1893828656]
+position = Vector2(444, 323)
+rotation = 1.5707964
+scale = Vector2(0.4407159, 0.44071588)
+texture = ExtResource("2_12cyj")
+
+[node name="NewCluesAreaTitle" type="Label" parent="." unique_id=403678717]
+offset_left = 887.0
+offset_top = 3.0
+offset_right = 1150.0
+offset_bottom = 37.0
+theme_override_font_sizes/font_size = 24
+text = "Collected clues"
+horizontal_alignment = 1
+
+[node name="MinNewCluesPosition" type="Node2D" parent="." unique_id=636758085]
+position = Vector2(970, 88)
+
+[node name="MaxNewCluesPosition" type="Node2D" parent="." unique_id=1586122182]
+position = Vector2(1036, 527)

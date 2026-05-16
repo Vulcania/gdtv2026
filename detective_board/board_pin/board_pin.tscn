@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://02ydq22a0y4h"]
+
+[ext_resource type="Script" uid="uid://dcmi6geb2haqb" path="res://detective_board/board_pin/board_pin.gd" id="1_yyfdn"]
+
+[sub_resource type="Gradient" id="Gradient_0f1cc"]
+offsets = PackedFloat32Array(0, 0.5535168, 0.617737)
+colors = PackedColorArray(1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_p1htd"]
+gradient = SubResource("Gradient_0f1cc")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 1)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yyfdn"]
+radius = 28.01785
+
+[node name="BoardPin" type="Area2D" unique_id=1603018467]
+script = ExtResource("1_yyfdn")
+
+[node name="PinTexture" type="Sprite2D" parent="." unique_id=201689157]
+texture = SubResource("GradientTexture2D_p1htd")
+
+[node name="PinDragCollision" type="CollisionShape2D" parent="." unique_id=1028984102]
+shape = SubResource("CircleShape2D_yyfdn")
